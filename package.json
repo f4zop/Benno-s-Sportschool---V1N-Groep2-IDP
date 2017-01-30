@@ -1,0 +1,52 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "simple auth system",
+  "main": "app.js",
+  "dependencies": {
+    "bson": "^1.0.4",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.22",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express-handlebars": "*",
+    "express-messanger": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messanger": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f4zop/Benno-s-Sportschool-V1N-Groep2-IDP.git"
+  },
+  "author": "Fazal Popkema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/f4zop/Benno-s-Sportschool-V1N-Groep2-IDP/issues"
+  },
+  "homepage": "https://github.com/f4zop/Benno-s-Sportschool-V1N-Groep2-IDP#readme"
+}

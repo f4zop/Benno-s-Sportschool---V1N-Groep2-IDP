@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head ng-app>
+  <head ng-app='myapp'>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="Poc" content="">
+    <meta name="Fazal Popkema" content="">
 
     <title>Benno's Sportschool</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script href="/bower_components/angular/angular.js"></script>
+    <script href="/bower_components/angular-socketio/socket.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
@@ -20,6 +20,12 @@
     <link href="/bower_components/bootstrap/dist/css/jombotron-narrow.css" rel="stylesheet">
     <link href="/bower_components/angular.min.js" rel="script">
     <link href="/bower_components/dist/jquery.min.js" rel="script">
+    <script type="text/javascript" src="js/bootstrap/bootstrap-dropdown.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+   </script>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -41,15 +47,16 @@
             <li role="presentation"><a href="about.html">About</a></li>
             <li role="presentation"><a href="contact.html">Contact</a></li>
             <li role="presentation"><a href="register.html">Register</a></li>
-            <li role="presentation" class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                Dropdown <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"></li>
-              </ul>
+            <li class="dropdown" id="accountmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">MySQL</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">HTML5</a></li>
+                </ul>
             </li>
-          </ul>
         </nav>
         <a href src="/index.html"> <img src="/img/LogoBennosSportschool.jpeg" width="270px"> </a>
         <!-- <h3 class="text-muted">Benno's Sportschool</h3> -->
@@ -93,6 +100,6 @@
 
     </div> <!-- /container -->
 
-
+    <script src="controllers/controller.js"></script>
   </body>
 </html>
