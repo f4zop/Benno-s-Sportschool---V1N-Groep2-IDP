@@ -1,0 +1,28 @@
+{
+  "name": "testsocket",
+  "version": "1.0.0",
+  "description": "auth system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fazal Popkema",
+  "license": "ISC",
+  "dependencies":{
+    "bson": "^1.0.4",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.22",
+    "bcrypt": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
+}
