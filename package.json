@@ -12,7 +12,7 @@
     "bson": "^1.0.4",
     "express": "^4.14.0",
     "mongodb": "^2.2.22",
-    "bcrypt": "*",
+    "bcryptjs": "*",
     "body-parser": "*",
     "connect-flash": "*",
     "cookie-parser": "^1.4.1",
